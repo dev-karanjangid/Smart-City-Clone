@@ -175,28 +175,77 @@ figure>img{
 }
 
 
+.videoSection>.container{
+     width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.videoSection>.container>.video{
+    flex-basis: 100%;
+    height: 400px;
+    /* border: 0.5px solid red; */
+}
+
+.videoSection>.container>.video>iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.videoSection>h2{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+
+
+.sitePlanSection>h2{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+
+.sitePlanSection>.container{
+    width: 100%;
+    height: 200px;
+}
+
+
+.locationSection>h2{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+
+.locationSection>.container{
+    width: 100%;
+    height: 200px;
+}
+
+
+.map{
+    margin: 50px auto;
+}
 
 
 
+.landmarkSection>h2{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
 
 
 
+.faq>h3{
+    font-size: 18px;
+    padding: 15px 0;
+    margin:0px 0 20px 0;
+     
+}
 
+.faq>h3>span{
+    font-size: 25px;
+    /* font-weight: 500; */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
