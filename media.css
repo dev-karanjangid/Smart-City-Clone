@@ -1,4 +1,38 @@
-@media only screen and (min-width:320px) and (max-width:480px){
+@media only screen and (min-width:581px) and (max-width:1000px){
+    nav{
+        flex-direction: column;
+        position: fixed;
+        align-items: start;
+        justify-content: start;
+        top:80px; 
+        width: 100%;
+        height: 80vh;
+        background-color: white;
+        gap: 0;
+        padding: 20px;
+        left: 100%;
+        transition: 1s;
+    }
+
+    header{
+        padding: 3px 20px;
+        align-items: center;
+    }
+
+    
+.moreThanSection>.container>.containerInnerBox{
+    flex-direction: column;
+}
+
+
+ 
+.containerInnerBox> .columnThree>div{
+    flex-direction: row-reverse; 
+    justify-content: start;
+}
+}
+
+@media only screen and (min-width:300px) and (max-width:580px){
 
 header{
     padding: 3px 20px;
@@ -12,7 +46,7 @@ nav{
     justify-content: start;
     top:80px; 
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: white;
     gap: 0;
     padding: 20px;
@@ -92,7 +126,6 @@ figure>img{
     flex-direction: column;
     gap: 20px;
 }
-
 
 .moreThanSection>.container>.containerInnerBox{
     flex-direction: column;
@@ -247,12 +280,101 @@ figure>img{
 
  
 
+footer>.container{
+    flex-direction: row;
+}
+
+
+.loanSection>h2{
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+
+
+.loanSection>.container>img{
+    max-width: 125px;
+    max-height: 125px;
+    margin: 10px auto;
+    padding: 15px;
+    background-size: cover;
+    box-shadow: 0 0 10px 2px #ccc;
+}
+
+
+
+.scheduleSection>.container{
+     
+    gap: 30px;
+    border: 5px solid #0886c7;
+    padding: 15px;
+    flex-direction: column;
+}
 
 
 
 
 
+.scheduleSection>.container>.left{
+    max-width: 100%;
+    /* border: 0.5px solid red; */
+}
 
+.scheduleSection>.container>.right{
+    flex-basis: 100%;
+}
+
+
+.scheduleSection>.container>.right>h2{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+
+.scheduleSection>.container>.right>.btn{
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.scheduleSection>.container>.right>.btn>button{
+    padding: 10px 10px;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+footer>.container{
+    max-width:1000px;
+    margin:40px auto;
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+}
+
+footer>.container>.left{
+    flex-basis: 100%;
+    /* text-align: right; */
+    font-size: 20px;
+    text-align: start;
+    
+}
+
+footer>.container>.right{
+    flex-basis: 42%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+}
+
+
+.footerBottom{
+    
+    line-height: 25px;
+    font-weight: 100;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 12px;
+    text-align: start;
+}
 
 
 
