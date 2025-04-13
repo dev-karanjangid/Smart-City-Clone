@@ -15,21 +15,35 @@
         <figure>
             <img src="images/Logo.svg" alt="">
         </figure>
-        <i class="fa-solid fa-bars mIcon" id="navIcon" ></i>
+        <div class="mIcon"><i class="fa-solid fa-bars "  id="navIcon" ></i></div>
         <nav>
             <ul>
-                <li>Overview</li>
-                <li>Project Highlights</li>
-                <li>Site Plan</li>
-                <li>Location</li>
-                <li>price List</li>
-                <li>Gallery</li>
-                <li>Contact Us</li>
+                <li> <a href="#Overview">Overview</a> </li>
+                <li> <a href="#Highlights">Project Highlights</a> </li>
+                <li> <a href="#Site">Site Plan</a> </li>
+                <li> <a href="#Location">Location</a> </li>
+                <li> <a href="#price">price List</a> </li>
+                <li> <a href="#Gallery">Gallery</a> </li>
+                <li> <a href="#Contact">Contact Us</a> </li>
             </ul>
 
-            <button>Book Online</button>
+            <button id="popupButton">Book Online</button>
             <button>Call us at: 9664010487</button>
         </nav>
+
+
+        <div class="popup">
+            <h3>Download Brochure <span>X</span></h3>
+            <hr>
+            <p>Feel free to contact us if you need any assistance, any help or another question.</p>
+            <div><input type="text" placeholder="NAME"></div>
+            <div><input type="email" placeholder="EMAIL"></div>
+            <div><input type="number" placeholder="PHONE NUMBER"></div>
+            <div><textarea name="" placeholder="MESSAGE" id=""></textarea></div>
+            <button>SEND</button>
+        </div>
+
+
     </header>
     
 
@@ -64,7 +78,7 @@
         
     </section>
 
-    <section class="projectOverview">
+    <section class="projectOverview" id="Overview">
         <div class="container">
             <div class="imgBox">
                 <img src="images/1.jpeg" alt="">
@@ -209,7 +223,7 @@
 
 
 
-    <section class="priceListSection">
+    <section class="priceListSection" id="price">
         <div class="container">
 
             <h2>Price List</h2>
@@ -264,7 +278,7 @@
     </section>
 
 
-    <section class="highlightsSection">
+    <section class="highlightsSection" id="Highlights">
 
         <h2>HIGHLIGHTS OF SmartCity</h2>
         <hr/>
@@ -385,7 +399,7 @@
     </section>
 
 
-    <section class="sitePlanSection">
+    <section class="sitePlanSection" id="Site">
         <h2>Site Plan</h2>
         <p>Adj. Bharat Petrol Pump, Near Upcoming Aerocity Extension, Mohali</p>
 
@@ -397,7 +411,7 @@
     </section>
 
 
-    <section class="locationSection">
+    <section class="locationSection" id="Location">
         <h2>Location</h2>
         <p>Your Dream Home Awaits you to Own Exquisite Site in the Smart City.</p>
 
@@ -553,7 +567,7 @@
     </section>
 
 
-    <section class="gallerySection">
+    <section class="gallerySection" id="Gallery">
         <h2>Project Gallery</h2>
 
         <div class="container">
@@ -591,7 +605,7 @@
 
 
 
-    <section class="scheduleSection">
+    <section class="scheduleSection" id="Contact">
         <div class="container">
             <div class="left">
                 <img src="images/s3.jpg" alt="">
@@ -625,6 +639,7 @@
         </div>
         
     </footer>
+    
     
 
 </body>

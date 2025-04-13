@@ -1,3 +1,6 @@
+
+// navigation script
+
 let navigation=document.querySelector("nav")
 let navigationIcon=document.querySelector("#navIcon")
 
@@ -29,4 +32,23 @@ outerFaq.forEach((items,index)=>{
             items.firstElementChild.innerHTML= "-"
         }
     })
+});
+
+
+
+
+
+
+// popup contact form 
+
+let popupBtn=document.querySelector("#popupButton");
+let popupClass=document.querySelector(".popup");
+let popupClose=document.querySelector(".popup>h3>span")
+
+popupBtn.addEventListener("click",()=>{
+    popupClass.classList.add("popupShow")
+});
+
+popupClose.addEventListener("click",()=>{
+    popupClass.classList.remove("popupShow")
 });

@@ -15,6 +15,15 @@
         border: none;
       }
 
+      a{
+        color: #1f4382;
+      }
+
+      a:hover{
+        color: black;
+      }
+
+      scroll-behavior: smooth;
 }
 
 
@@ -48,6 +57,7 @@ nav>ul{
 nav>ul>li{
     padding: 10px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 nav>button:nth-child(2){
@@ -76,8 +86,13 @@ nav>button:nth-child(3){
     display: none;
 }
 
+.banner{
+    height: 86vh;
+}
+
 .banner>img{
     width: 100%;
+    height: 100%;
 }
 
 .formSection{
@@ -996,5 +1011,91 @@ footer>.container>.right{
     line-height: 25px;
     font-weight: 100;
     margin-top: 70px;
+    width: 100%;
+}
+
+
+.popup{
+    max-width: 500px;
+    box-shadow: 0 0 10px 2px #ccc;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: -1000px;
+    background-color: white;
+    padding: 15px;  
+    transition: 0.8s;
+}
+
+.popupShow{
+    top: 40%;
+}
+
+.popup>h3{
+    font-weight: 300;
+    font-size: 20px;
+    margin:10px 0 20px 0;
+}
+
+.popup>h3>span{
+    right: 20px;
+    position: absolute;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.popup>p{
+    font-size: 14.5px;
+    text-align: center;
+    margin:10px 0 20px 0;
+    color: #8a8585;
+}
+
+.popup>div{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.popup>div>input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 0.5px solid #ccc;
+    background-color: #f0f4f5;
+    transition: 0.5s;
+}
+
+.popup>div>input:focus{
+    box-shadow: 0 0 10px 0.5px #ccc;
+    border: 0.5px solid #ccc;
+    outline: none;
+}
+
+.popup>div>textarea{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 0.5px solid #ccc;
+    background-color: #f0f4f5;
+    color: #ccc;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.popup>div>textarea:focus{
+    box-shadow: 0 0 10px 0.5px #ccc;
+    border: 0.5px solid #ccc;
+    outline: none;
+}
+
+.popup>button{
+    padding: 10px 20px;
+    /* width: 1%; */
+    font-size: 16px;
+    background-image: linear-gradient(to right, #4a9c46, #3db138, #40d954, #5cc044, #4b9f45);
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
     width: 100%;
 }
